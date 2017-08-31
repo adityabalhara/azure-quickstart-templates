@@ -7,23 +7,17 @@ Configuration ContosoWebsite
     #Install the IIS Role
     WindowsFeature IIS
     {
-      Ensure = “Present”
-      Name = “Web-Server”
+      Ensure = â€œPresentâ€
+      Name = â€œWeb-Serverâ€
     }
 
     #Install ASP.NET 4.5
     WindowsFeature ASP
     {
-      Ensure = “Present”
-      Name = “Web-Asp-Net45”
+      Ensure = â€œPresentâ€
+      Name = â€œWeb-Asp-Net45â€
     }
-    #Install ASP.NET 3.5
-    WindowsFeature ASP
-    {
-      Ensure = “Present”
-      Name = “Web-Asp-Net35”
-    }
-
+   
      WindowsFeature WebServerManagementConsole
     {
         Name = "Web-Mgmt-Console"
